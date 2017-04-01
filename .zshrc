@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/Users/Brent/Files/Sites/bin:$PATH
-export VAGRANT_HOME=/Users/Brent/Documents/Vagrant/vagrant.d
+export PATH=$HOME/bin:/usr/local/bin:~/Files/Sites/bin:$PATH
+export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Brent/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -101,8 +101,13 @@ alias ytmp3='youtube-dl -x --audio-format mp3'
 # Back up and update scripts
 alias backupatom="cd ~/Documents/Dev/Atom && ./backup.sh"
 alias updateatom="cd ~/Documents/Dev/Atom && ./update.sh"
+
 alias backupiterm="cd ~/Documents/Dev/iTerm && ./backup.sh"
 alias updateiterm="cd ~/Documents/Dev/iTerm && ./update.sh"
+
+alias backupzsh="cd ~/Documents/Dev/ZSH && ./backup.sh"
+alias updatezsh="cd ~/Documents/Dev/ZSH && ./update.sh"
+
 
 alias backupinstaller="cd ~/Documents/Dev/Installer && ./backup.sh"
 
