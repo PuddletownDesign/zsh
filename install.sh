@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd ~/Documents/Dev
-
+rm ~/.zshrc
 ln -s ~/Documents/Dev/ZSH/puddletown.zsh-theme ~/.oh-my-zsh/themes/puddletown.zsh-theme
 ln -s ~/Documents/Dev/ZSH/.zshrc ~/.zshrc
 
