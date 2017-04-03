@@ -114,7 +114,6 @@ alias updatezsh="cd ~/Documents/Dev/ZSH && ./update.sh"
 alias backupbrew="cd ~/Documents/Dev/Brew && ./backup.sh"
 alias updatebrew="cd ~/Documents/Dev/Brew && ./update.sh"
 
-
 alias backupinstaller="cd ~/Documents/Dev/Installer && ./backup.sh"
 
 # Brew Cask
