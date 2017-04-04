@@ -1,7 +1,7 @@
 
 
 PROMPT='
-%{$fg_bold[cyan]%}MacBook Pro ➤ %{$fg_bold[magenta]%} %{$fg_bold[magenta]%}%~ %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
+%{$fg_bold[cyan]%}Mac ➤ %{$fg_bold[magenta]%}%~ %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
 
 %{$fg_bold[grey]%}$%{$reset_color%}  '
 
