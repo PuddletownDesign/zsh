@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/Files/Sites/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/Documents/dev/bin:$PATH
 export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 
 # Path to your oh-my-zsh installation.
@@ -96,6 +96,7 @@ alias a='atom'
 alias tmm='sudo fs_usage -f -R filesys backupd'
 alias wds='webpack-dev-server --progress --colors'
 alias ytmp3='youtube-dl -x --audio-format mp3'
+alias ptb='ptd-bootstrap'
 
 
 # Back up and update scripts
