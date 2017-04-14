@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/Documents/dev/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$PATH
 export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 
 # Path to your oh-my-zsh installation.
@@ -117,6 +117,8 @@ alias backupbrew="cd ~/Documents/Dev/Brew && ./backup.sh"
 alias updatebrew="cd ~/Documents/Dev/Brew && ./update.sh"
 
 alias backupinstaller="cd ~/Documents/Dev/Installer && ./backup.sh"
+
+alias backupbin="cd ~/Documents/Dev/bin && ./backup.sh"
 
 # Brew Cask
 alias bc='brew cask'
