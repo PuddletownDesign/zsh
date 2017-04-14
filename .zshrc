@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig='atom ~/.zshrc'
 alias gitconfig='atom ~/.gitconfig'
 alias ohmyzsh='atom ~/.oh-my-zsh'
+alias 1='archey'
 
 alias reload='. ~/.zshrc'
 alias update='brew cu -ay --cleanup && brew update && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
