@@ -93,7 +93,7 @@ alias 1='archey'
 alias reload='. ~/.zshrc'
 alias update='brew cu -ay --cleanup && brew update && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
-#misc commands
+# Misc commands
 alias l='ls -lhG'
 alias a='atom'
 alias tmm='sudo fs_usage -f -R filesys backupd'
@@ -101,6 +101,13 @@ alias wds='webpack-dev-server --progress --colors'
 alias ytmp3='youtube-dl -x --audio-format mp3'
 alias ptb='ptd-bootstrap'
 alias ct='crontab'
+
+# Vagrant
+alias v='vagrant up && vagrant ssh'
+alias vh='vagrant halt'
+alias vr='vagrant reload'
+alias vs='vagrant ssh'
+alias vu='vagrant up'
 
 
 # Back up and update scripts
