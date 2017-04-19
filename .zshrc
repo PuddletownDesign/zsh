@@ -91,7 +91,7 @@ alias ohmyzsh='atom ~/.oh-my-zsh'
 alias 1='archey'
 
 alias reload='. ~/.zshrc'
-alias update='brew cu -ay --cleanup && brew update && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
+alias update='brew cu -ay --cleanup && brew update && brew cleanup && brew upgrade && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 # Misc commands
 alias l='ls -lhG'
