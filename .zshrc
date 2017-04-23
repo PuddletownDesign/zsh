@@ -112,6 +112,9 @@ alias vu='vagrant up'
 
 
 # Back up and update scripts
+
+alias backupconfig="cd ~/Documents/Dev/bin/ && ./backup-configs.sh"
+
 alias backupatom="cd ~/Documents/Dev/Atom && ./backup.sh"
 alias updateatom="cd ~/Documents/Dev/Atom && ./update.sh"
 
