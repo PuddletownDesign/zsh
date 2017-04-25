@@ -89,10 +89,22 @@ alias zshconfig='atom ~/.zshrc'
 alias gitconfig='atom ~/.gitconfig'
 alias ohmyzsh='atom ~/.oh-my-zsh'
 alias 1='archey'
-
 alias reload='. ~/.zshrc'
 alias update='brew cu -ay --cleanup && brew update && brew cleanup && brew upgrade && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
+
+# Yarn Aliases
+alias y='yarn'
+alias ya='yarn add -D'
+alias yap='yarn add'
+alias yi='yarn install'
+alias yin='yarn info'
+alias yinit='yarn init --yes'
+alias yl='yarn list'
+alias yr='yarn run'
+
+
+
 # Misc commands
 alias l='ls -lhG'
 alias a='atom'
