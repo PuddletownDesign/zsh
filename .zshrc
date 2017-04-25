@@ -101,6 +101,7 @@ alias wds='webpack-dev-server --progress --colors'
 alias ytmp3='youtube-dl -x --audio-format mp3'
 alias ptb='ptd-bootstrap'
 alias ct='crontab'
+alias dc='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
 
 # Vagrant
 alias v='vagrant up && vagrant ssh'
