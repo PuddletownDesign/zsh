@@ -118,7 +118,9 @@ alias nig='npm install -g'
 alias nid='pnpm install --save-dev'
 alias nio='pnpm install --offline'
 alias niy='yarn init --yes' # npm init -y doesn't work
-
+alias nr='npm run'
+alias ns='npm start'
+alias nt='npm test'
 
 
 
