@@ -93,15 +93,26 @@ alias reload='. ~/.zshrc'
 alias update='brew cu -ay --cleanup && brew update && brew cleanup && brew upgrade && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
+
+
 # Yarn Aliases
-alias y='yarn'
-alias ya='yarn add -D'
-alias yap='yarn add'
-alias yi='yarn install'
-alias yin='yarn info'
-alias yinit='yarn init --yes'
-alias yl='yarn list'
-alias yr='yarn run'
+# alias y='yarn'
+# alias ya='yarn add -D'
+# alias yap='yarn add'
+# alias yi='yarn install'
+# alias yin='yarn info'
+# alias yinit='yarn init --yes'
+# alias yl='yarn list'
+
+# NPM Aliases
+
+# PNPM Aliases
+alias n='pnpm'
+alias ni='pnpm install'
+alias nid='pnpm install --save-dev'
+alias niy='pnpm init --yes'
+alias nl='pnpm list'
+
 
 
 
