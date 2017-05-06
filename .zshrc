@@ -113,6 +113,7 @@ alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
 
 # PNPM Aliases
 alias n='pnpm'
+alias nde='DEBUG=express* node'
 alias ni='pnpm install'
 alias nig='npm install -g'
 alias nid='pnpm install --save-dev'
