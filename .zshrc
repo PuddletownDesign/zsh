@@ -133,6 +133,7 @@ alias pgrestart='brew services restart postgresql'
 alias j='jekyll'
 alias jn='jekyll new --blank'
 alias js='bundle exec jekyll serve'
+alias ji='bundle install'
 
 # Misc commands
 alias l='ls -lhG'
