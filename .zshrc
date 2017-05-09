@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$PATH
+export GEM_HOME=~/.gem
+export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$GEM_HOME/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -9,6 +10,7 @@ export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 export EDITOR=atom VISUAL=atom
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+
 
 
 
