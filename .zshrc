@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export GEM_HOME=~/.gem
-export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$GEM_HOME/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
