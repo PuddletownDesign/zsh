@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export GEM_HOME=~/.gem
-export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$GEM_HOME/bin:$PATH
+# export GEM_HOME=~/.gem
+export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -233,3 +233,6 @@ alias -g P="2>&1| pygmentize -l pytb"
 # alias gsta="git stash apply"
 # alias gstl="git stash list"
 # alias gstp="git stash pop"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
