@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/Documents/Dev/bin:$GEM_HOME/bin:$PATH
-
+export PATH=$HOME/bin:/usr/local/bin:~/Dev/Config/bin:$GEM_HOME/bin:$HOME/.composer/vendor/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -9,9 +8,6 @@ export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 export EDITOR=atom VISUAL=atom
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-
-
-
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -91,15 +87,50 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # ZSH aliases
+alias r='/usr/local/Cellar/r/3.4.1_2/bin/R'
 alias zshconfig='atom ~/.zshrc'
-alias gitconfig='atom ~/.gitconfig'
+alias gitconfig='atom ~/Dev/Config/Git/gitcustom.txt'
 alias ohmyzsh='atom ~/.oh-my-zsh'
-alias 1='archey'
 alias reload='. ~/.zshrc'
-alias update='brew cu -ay --cleanup && brew update && brew cleanup && brew upgrade && npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias l='ls -lhG'
+alias sshconfig="atom ~/.ssh/config"
 
+# Mac Related
+alias 1='archey'
+alias dt='cd ~/Desktop'
+alias now='date +"%m-%d-%y %H:%M:%S %z"'
+alias a='atom'
+alias tmm='sudo fs_usage -f -R filesys backupd'
+alias yt='youtube-dl'
+alias ytmp3='youtube-dl -x --audio-format mp3'
+alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
+
+# Docker Aliases
+alias dk='docker'
+alias dkb='docker build'
+alias dkl='docker ls'
+alias dki='docker images'
+alias dkir='docker images rm'
+alias dkn='docker network'
+alias dknc='docker network create'
+alias dknl='docker network ls'
+alias dknr='docker network rm'
+alias dkp='docker ps -a'
+alias dkpl='docker pull'
+alias dkr='docker run'
+alias dkrm='docker rm'
+alias dkstart='docker start'
+alias dkstop='docker stop'
+
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcud='docker-compose up -d'
+
+alias dm='docker-machine'
+alias dmc='docker-machine create'
 
 # Yarn Aliases
 # alias y='yarn'
@@ -110,16 +141,48 @@ alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
 # alias yinit='yarn init --yes'
 # alias yl='yarn list'
 
+# Laravel Aliases
+alias art='php artisan'
+alias cda='composer dump-autoload'
+alias artmm='php artisan make:model -mcr'
+alias artm='php artisan migrate'
+alias artmr='php artisan migrate:refresh'
+alias artlog='tail -f storage/logs/laravel.log'
+alias sql='mysql -uroot -p'
+
+# Mamp
+alias mamplog='tail -f /Applications/MAMP/logs/php_error.log'
+
+# Dev Tools
+# alias ptb='ptd-bootstrap'
+alias ct='crontab'
+alias sha256='shasum -a 256'
+alias bootstrap='git clone https://github.com/PuddletownDesign/puddletown-bootstrap'
+alias jsenv='git clone https://github.com/PuddletownDesign/js-env'
+# Linter Files
+# alias jshint='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.jshintrc'
+alias csslinter='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.scss-lint.yml'
+
+alias editorconfig='wget https://raw.githubusercontent.com/airbnb/javascript/master/.editorconfig'
+alias mdlinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.markdownlint.json'
+alias eslinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.eslintrc'
+alias jshinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.jshintrc'
+alias linters='editorconfig && mdlint && eslint && jshint && csslint'
+
+
 # NPM Aliases
+alias wds='webpack-dev-server --progress --colors'
+
 
 # PNPM Aliases
-alias n='pnpm'
+alias n='npm'
 alias nde='DEBUG=express* node'
-alias ni='pnpm install'
+alias ni='npm install'
+alias pi='pnpm install'
 alias nig='npm install -g'
-alias nid='pnpm install --save-dev'
+alias nid='npm install --save-dev'
 alias nio='npm install --save-optional'
-alias nioff='pnpm install --offline'
+alias nioff='npm install --offline'
 alias niy='yarn init --yes' # npm init -y doesn't work
 alias nr='npm run'
 alias ns='npm start'
@@ -131,22 +194,12 @@ alias pgstop='brew services stop postgresql'
 alias pgrestart='brew services restart postgresql'
 
 # Jekyll
-alias j='jekyll'
+# alias j='jekyll'
+# # alias jn='jekyll new'
 alias jb='jekyll build'
-alias jn='jekyll new'
+alias jd='bundle exec jekyll serve'
 alias js='bundle exec jekyll serve'
 alias ji='bundle install'
-
-# Misc commands
-alias l='ls -lhG'
-alias a='atom'
-alias tmm='sudo fs_usage -f -R filesys backupd'
-alias wds='webpack-dev-server --progress --colors'
-alias yt='youtube-dl'
-alias ytmp3='youtube-dl -x --audio-format mp3'
-alias ptb='ptd-bootstrap'
-alias ct='crontab'
-alias dc='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
 
 # Vagrant
 alias v='vagrant up && vagrant ssh'
@@ -156,29 +209,28 @@ alias vr='vagrant reload'
 alias vs='vagrant ssh'
 alias vu='vagrant up'
 
-
 # Back up and update scripts
+alias update='brew update && brew cleanup && brew upgrade && brew cu -ay --cleanup && apm update --no-confirm && upgrade_oh_my_zsh && ncu -g'
+alias backupconfig="cd ~/Dev/Config/bin/ && ./backup-configs.sh"
 
-alias backupconfig="cd ~/Documents/Dev/bin/ && ./backup-configs.sh"
+alias backupatom="cd ~/Dev/Config/Atom && ./backup.sh"
+alias updateatom="cd ~/Dev/Config/Atom && ./update.sh"
 
-alias backupatom="cd ~/Documents/Dev/Atom && ./backup.sh"
-alias updateatom="cd ~/Documents/Dev/Atom && ./update.sh"
+alias backupgit="cd ~/Dev/Config/Git && ./backup.sh"
+alias updategit="cd ~/Dev/Config/Git && ./update.sh"
 
-alias backupgit="cd ~/Documents/Dev/Git && ./backup.sh"
-alias updategit="cd ~/Documents/Dev/Git && ./update.sh"
+alias backupiterm="cd ~/Dev/Config/iTerm && ./backup.sh"
+alias updateiterm="cd ~/Dev/Config/iTerm && ./update.sh"
 
-alias backupiterm="cd ~/Documents/Dev/iTerm && ./backup.sh"
-alias updateiterm="cd ~/Documents/Dev/iTerm && ./update.sh"
+alias backupzsh="cd ~/Dev/Config/ZSH && ./backup.sh"
+alias updatezsh="cd ~/Dev/Config/ZSH && ./update.sh"
 
-alias backupzsh="cd ~/Documents/Dev/ZSH && ./backup.sh"
-alias updatezsh="cd ~/Documents/Dev/ZSH && ./update.sh"
+alias backupbrew="cd ~/Dev/Config/Brew && ./backup.sh"
+alias updatebrew="cd ~/Dev/Config/Brew && ./update.sh"
 
-alias backupbrew="cd ~/Documents/Dev/Brew && ./backup.sh"
-alias updatebrew="cd ~/Documents/Dev/Brew && ./update.sh"
+alias backupinstaller="cd ~/Dev/Config/Installer && ./backup.sh"
 
-alias backupinstaller="cd ~/Documents/Dev/Installer && ./backup.sh"
-
-alias backupbin="cd ~/Documents/Dev/bin && ./backup.sh"
+alias backupbin="cd ~/Dev/Config/bin && ./backup.sh"
 
 # Brew Cask
 alias bc='brew cask'
@@ -198,7 +250,6 @@ alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
 alias -g NUL="> /dev/null 2>&1"
 alias -g P="2>&1| pygmentize -l pytb"
-
 
 # alias ug="ungit --port=8081"
 
@@ -233,6 +284,7 @@ alias -g P="2>&1| pygmentize -l pytb"
 # alias gsta="git stash apply"
 # alias gstl="git stash list"
 # alias gstp="git stash pop"
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
