@@ -88,9 +88,8 @@ source $ZSH/oh-my-zsh.sh
 #
 # ZSH aliases
 alias r='/usr/local/Cellar/r/3.4.1_2/bin/R'
-alias zshconfig='atom ~/.zshrc'
+alias zshconfig='atom ~/Dev/Config/ZSH/.zshrc'
 alias gitconfig='atom ~/Dev/Config/Git/gitcustom.txt'
-alias ohmyzsh='atom ~/.oh-my-zsh'
 alias reload='. ~/.zshrc'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
