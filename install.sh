@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git remote add upstream https://github.com/PuddletownDesign/Git
+git remote add upstream https://github.com/PuddletownDesign/ZSH
 
 rm ~/.zshrc
 ln -s ~/Dev/Config/ZSH/puddletown.zsh-theme ~/.oh-my-zsh/themes/puddletown.zsh-theme
