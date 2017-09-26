@@ -1,3 +1,5 @@
+# Test line
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:~/Dev/Config/bin:$GEM_HOME/bin:$HOME/.composer/vendor/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
