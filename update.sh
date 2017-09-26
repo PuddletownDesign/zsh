@@ -1,4 +1,7 @@
 #!/bin/bash
 
 cd ~/Dev/Config/ZSH
-git pull origin mac
+git fetch upstream
+git checkout mac
+git merge upstream/mac --no-edit
+
