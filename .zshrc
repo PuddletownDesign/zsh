@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 alias r='/usr/local/Cellar/r/3.4.1_2/bin/R'
 alias zshconfig='atom ~/Dev/Config/ZSH/.zshrc'
 alias gitconfig='atom ~/Dev/Config/Git/gitcustom.txt'
+alias gitignore='atom ~/Dev/Config/Git/.gitignore_global'
 alias reload='. ~/.zshrc'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
