@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/Dev/Config/bin:$GEM_HOME/bin:$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:~/Dev/Config/bin:$GEM_HOME/bin:$HOME/.composer/vendor/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -209,7 +209,7 @@ alias vs='vagrant ssh'
 alias vu='vagrant up'
 
 # Back up and update scripts
-alias update='brew update && brew cleanup && brew cask cleanup && brew cu -ay --cleanup && apm update --no-confirm && upgrade_oh_my_zsh && ncu -g'
+alias update='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew cu -ay --cleanup && brew doctor && brew missing && apm update --no-confirm && upgrade_oh_my_zsh && ncu -g'
 alias backupconfig="cd ~/Dev/Config/bin/ && ./backup-configs.sh"
 
 alias backupatom="cd ~/Dev/Config/Atom && ./backup.sh"
