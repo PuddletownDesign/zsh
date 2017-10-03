@@ -173,19 +173,25 @@ alias linters='editorconfig && mdlint && eslint && jshint && csslint'
 alias wds='webpack-dev-server --progress --colors'
 
 
-# PNPM Aliases
+# NPM Aliases
 alias n='npm'
 alias nde='DEBUG=express* node'
 alias ni='npm install'
-alias pi='pnpm install'
 alias nig='npm install -g'
 alias nid='npm install --save-dev'
 alias nio='npm install --save-optional'
 alias nioff='npm install --offline'
 alias niy='yarn init --yes' # npm init -y doesn't work
+alias nls='npm ls --depth=0'
+alias nlsg='npm ls -g --depth=0'
 alias nr='npm run'
 alias ns='npm start'
 alias nt='npm test'
+
+# PNPM Aliases
+alias p='pnpm'
+alias pi='pnpm install'
+alias pls='pnpm ls -g --depth=0'
 
 # PostgresSQL
 alias pgstart='brew services start postgresql'
