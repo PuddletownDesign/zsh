@@ -187,6 +187,7 @@ alias nlsg='npm ls -g --depth=0'
 alias nr='npm run'
 alias ns='npm start'
 alias nt='npm test'
+alias nu='npm uninstall'
 
 # PNPM Aliases
 alias p='pnpm'
@@ -215,7 +216,7 @@ alias vs='vagrant ssh'
 alias vu='vagrant up'
 
 # Back up and update scripts
-alias update='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew cu -ay --cleanup && brew doctor && brew missing && apm update --no-confirm && upgrade_oh_my_zsh && ncu -g'
+alias update='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew cu -ay --cleanup && brew doctor && brew missing && apm update --no-confirm && upgrade_oh_my_zsh && npm update -g'
 alias backupconfig="cd ~/Dev/Config/bin/ && ./backup-configs.sh"
 
 alias backupatom="cd ~/Dev/Config/Atom && ./backup.sh"
