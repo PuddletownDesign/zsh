@@ -197,16 +197,16 @@ alias mamplog='tail -f /Applications/MAMP/logs/php_error.log'
 alias ct='crontab'
 alias sha256='shasum -a 256'
 alias bootstrap='git clone https://github.com/PuddletownDesign/puddletown-bootstrap'
-alias jsenv='git clone https://github.com/PuddletownDesign/js-env'
-# Linter Files
-# alias jshint='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.jshintrc'
-alias csslinter='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.scss-lint.yml'
 
+# Linter Files
+# 
+alias jshinter='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.jshintrc'
+alias csslinter='wget https://raw.githubusercontent.com/PuddletownDesign/linters/master/.scss-lint.yml'
 alias editorconfig='wget https://raw.githubusercontent.com/airbnb/javascript/master/.editorconfig'
 alias mdlinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.markdownlint.json'
 alias eslinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.eslintrc'
-alias jshinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.jshintrc'
-alias linters='editorconfig && mdlint && eslint && jshint && csslint'
+# alias jshinter='wget https://raw.githubusercontent.com/airbnb/javascript/master/linters/.jshintrc'
+alias linters='editorconfig && mdlint && eslinter && csslinter'
 
 # PostgresSQL
 alias pgstart='brew services start postgresql'
