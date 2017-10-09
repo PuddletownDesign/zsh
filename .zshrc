@@ -98,6 +98,18 @@ alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Goo
 alias l='ls -lhG'
 alias sshconfig="atom ~/.ssh/config"
 
+# Brew
+alias bi='brew install'
+alias bd='brew doctor'
+alias bl='brew list'
+alias bs='brew search'
+alias bu='brew uninstall'
+alias bc='brew cask'
+alias bci='brew cask install'
+alias bcl='brew cask list'
+alias bcs='brew cask search'
+alias bcu='brew cu -ay'
+
 # Mac Related
 alias 1='archey'
 alias dt='cd ~/Desktop'
@@ -239,13 +251,6 @@ alias updatebrew="cd ~/Dev/Config/Brew && ./update.sh"
 alias backupinstaller="cd ~/Dev/Config/Installer && ./backup.sh"
 
 alias backupbin="cd ~/Dev/Config/bin && ./backup.sh"
-
-# Brew Cask
-alias bc='brew cask'
-alias bci='brew cask install'
-alias bcl='brew cask list'
-alias bcs='brew cask search'
-alias bcu='brew cu -ay'
 
 # Command line head / tail shortcuts
 alias -g H='| head'
