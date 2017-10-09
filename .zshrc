@@ -156,6 +156,7 @@ alias wds='webpack-dev-server --progress --colors'
 # PNPM Aliases
 alias p='pnpm'
 alias pi='pnpm install'
+alias pid='pnpm install --save-dev'
 alias pls='pnpm ls -g --depth=0'
 
 # Yarn Aliases
