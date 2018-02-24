@@ -156,7 +156,7 @@ alias nig='npm install -g'
 alias nid='npm install --save-dev'
 alias nio='npm install --save-optional'
 alias nioff='npm install --offline'
-alias niy='yarn init --yes' # npm init -y doesn't work
+alias niy='npm init -y' # npm init -y doesn't work
 alias nls='npm ls --depth=0'
 alias nlsg='npm ls -g --depth=0'
 alias nr='npm run'
