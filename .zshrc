@@ -4,6 +4,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
 export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
 export EDITOR=atom VISUAL=atom
 # Path to your oh-my-zsh installation.
@@ -299,9 +300,10 @@ alias -g P="2>&1| pygmentize -l pytb"
 # alias gstl="git stash list"
 # alias gstp="git stash pop"
 
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
-
 # Virtualenv/VirtualenvWrapper
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:~/.rvm/bin"
+#[[ -s "$HOME/.rvm/bin/rvm" ]] && . "$HOME/.rvm/bin/rvm" 
+#source $HOME/.rvm/bin/rvm
