@@ -119,6 +119,7 @@ alias a='atom'
 alias tmm='sudo fs_usage -f -R filesys backupd'
 alias yt='youtube-dl'
 alias ytmp3='youtube-dl -x --audio-format mp3'
+alias ytwav='youtube-dl -x --audio-format wav'
 alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
 
 # Docker Aliases
