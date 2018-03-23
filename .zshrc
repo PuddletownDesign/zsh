@@ -112,15 +112,18 @@ alias bcs='brew cask search'
 alias bcu='brew cu -ay'
 
 # Mac Related
+
 alias 1='archey'
 alias dt='cd ~/Desktop'
 alias now='date +"%m-%d-%y %H:%M:%S %z"'
 alias a='atom'
+alias rsync="rsync -azP"
 alias tmm='sudo fs_usage -f -R filesys backupd'
 alias yt='youtube-dl'
 alias ytmp3='youtube-dl -x --audio-format mp3'
 alias ytwav='youtube-dl -x --audio-format wav'
 alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
+
 
 # Docker Aliases
 alias dk='docker'
