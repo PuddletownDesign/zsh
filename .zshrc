@@ -127,6 +127,7 @@ alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.
 
 # Docker Aliases
 alias dk='docker'
+alias dkrmi='docker rmi'
 alias dkb='docker build'
 alias dkc='docker container'
 alias dkcls='docker container ls'
@@ -145,6 +146,7 @@ alias dkr='docker run'
 alias dkrm='docker rm'
 alias dkstart='docker start'
 alias dkstop='docker stop'
+alias dksp'docker system prune'
 
 alias dc='docker-compose'
 alias dcu='docker-compose up'
