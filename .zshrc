@@ -108,7 +108,7 @@ alias bc='brew cask'
 alias bci='brew cask install'
 alias bcl='brew cask list'
 alias bcs='brew cask search'
-alias bcu='brew cu -ay'
+alias bcu='brew cask uninstall'
 
 # Mac Related
 
