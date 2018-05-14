@@ -85,7 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-#
+alias server='nocorrect server' 
+
 # ZSH aliases
 alias r='/usr/local/Cellar/r/3.4.1_2/bin/R'
 alias zshconfig='atom ~/Dev/Config/ZSH/.zshrc'
