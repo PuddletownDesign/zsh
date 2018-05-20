@@ -1,7 +1,10 @@
 # If you come from bash you might have to change your $PATH.
+
+
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:~/Dev/Config/bin:$GEM_HOME/bin:$HOME/.composer/vendor/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 
 
 export VAGRANT_HOME=~/Documents/Vagrant/vagrant.d
