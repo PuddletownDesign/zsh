@@ -159,7 +159,7 @@ alias dm='docker-machine'
 alias dmc='docker-machine create'
 
 # NPM Aliases
-alias n='npx'
+alias n='npm'
 alias nde='DEBUG=express* node'
 alias ni='npm install'
 alias nig='npm install -g'
