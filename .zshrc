@@ -241,7 +241,9 @@ alias vs='vagrant ssh'
 alias vu='vagrant up'
 
 # Back up and update scripts
-alias update='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew cu -ay --cleanup &&  brew missing && apm update --no-confirm && upgrade_oh_my_zsh && npm update -g && brew doctor'
+# alias update='brew update && brew upgrade && brew cleanup -s && brew cu -ay --cleanup &&  brew missing && apm update --no-confirm && upgrade_oh_my_zsh && npm update -g && brew doctor'
+alias update='brew update && brew upgrade && brew cleanup -s && brew missing && apm update --no-confirm && upgrade_oh_my_zsh && npm update -g && brew doctor'
+
 alias backupconfig="cd ~/Dev/Config/bin/ && ./backup-configs.sh"
 
 alias backupatom="cd ~/Dev/Config/Atom && ./backup.sh"
