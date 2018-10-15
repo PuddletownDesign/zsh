@@ -208,6 +208,7 @@ alias mamplog='tail -f /Applications/MAMP/logs/php_error.log'
 alias ct='crontab'
 alias sha256='shasum -a 256'
 alias bootstrap='git clone https://github.com/PuddletownDesign/puddletown-bootstrap'
+alias jsenv='git clone https://github.com/PuddletownDesign/js-env'
 
 # Linter Files
 # 
