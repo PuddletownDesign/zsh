@@ -109,13 +109,10 @@ alias bl='brew list'
 alias bs='brew search'
 alias bu='brew uninstall'
 alias bc='brew cask'
-alias bci='brew cask install'
 alias bcl='brew cask list'
-alias bcs='brew cask search'
 alias bcu='brew cask uninstall'
 
 # Mac Related
-alias hbtc='cat ~/Dev/Business/btc-addr.txt'
 alias 1='archey'
 alias dt='cd ~/Desktop'
 alias now='date +"%m-%d-%y %H:%M:%S %z"'
