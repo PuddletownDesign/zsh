@@ -109,6 +109,7 @@ alias bl='brew list'
 alias bs='brew search'
 alias bu='brew uninstall'
 alias bc='brew cask'
+alias bci='brew cask install'
 alias bcl='brew cask list'
 alias bcu='brew cask uninstall'
 
