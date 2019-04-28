@@ -125,6 +125,9 @@ alias ytmp3='youtube-dl -x --audio-format mp3'
 alias ytwav='youtube-dl -x --audio-format wav'
 alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
 
+# Python 
+alias python='python3'
+alias pip='pip3'
 
 # Docker Aliases
 alias dk='docker'
