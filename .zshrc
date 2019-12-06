@@ -101,6 +101,7 @@ alias cc='open -a /Applications/Google\ Chrome\ Canary.app'
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias l='ls -lhG'
 alias sshconfig="atom ~/.ssh/config"
+alias torssh='ssh -o ProxyCommand="ncat --proxy-type socks5 --proxy 127.0.0.1:9050 %h %p"'
 
 # Brew
 alias bi='brew install'
