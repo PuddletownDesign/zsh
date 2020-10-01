@@ -1,5 +1,3 @@
-
-
 PROMPT='
 %{$fg_bold[cyan]%}MacOS ➤ %{$fg_bold[magenta]%}%~ %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}
 

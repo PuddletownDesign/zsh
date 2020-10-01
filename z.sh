@@ -1,0 +1,20 @@
+/Users/Brent/Files/Config/Shells/zsh|273|1601510821
+/Users/Brent/Files/Config/Linters|22|1601469857
+/Users/Brent/Files/Movies/.p|13|1601488438
+/Users/Brent/Desktop|291|1601454194
+/Users/Brent/Files/Config/Terminals/iTerm/Icons|3|1601458865
+/Users/Brent/Files|1|1601509779
+/Users/Brent/Files/Config/OhMyZSH/plugins/chucknorris|2|1601480233
+/Users/Brent/Files/Development/Documentation|8|1601446882
+/Volumes|7|1601112679
+/Users/Brent/Files/Development/Projects|4|1601452609
+/Users/Brent/Files/Cloud/Google Drive/Share/The Funnel of Love|10|1601435300
+/Users/Brent/Files/Config/Shells/zsh/oh-my-zsh/plugins|4|1601480180
+/Users/Brent/Files/Config/OhMyZSH/custom/plugins|13|1601473082
+/Users/Brent/Files/Config/OhMyZSH|15|1601488289
+/Users/Brent/Files/Config/OhMyZSH/themes|7|1601483254
+/Users/Brent/Files/Config|8|1601476200
+/|2|1601275129
+/Users/Brent/Files/Config/Shells|10|1601484761
+/Users/Brent/Files/Config/Shells/zsh/oh-my-zsh|2|1601476183
+/usr/local|16|1601449441

@@ -1,0 +1,46 @@
+/* Reference Color Chart  */
+/* Ganked from atom dark one syntax theme
+
+  BASE COLORS
+  The base color scheme. of background, foreground, selections
+
+  [iterm]      [Hex]       [HSL]
+  fg */        #b9bfc9     hsl(217, 8.0%, 78.8%)   /* <-white
+  bg */        #282c33     hsl(218, 21.6%, 20.0%)  /* <-other
+  sel-bg */    #3e4452     hsl(220, 24.4, 32.2)    /* <-other
+  sel-fg */    #b9bfc9     hsl(217, 8.0%, 78.8%)   /* <-white
+  links */     #56b6c2     hsl(187, 47%, 55%)      /* <-cyan
+
+/*---------------------------------------------------------
+
+  NORMAL COLORS
+  Normal colors are going to be 5% less saturation/value
+  than the satom one dark theme.
+
+  [iterm]      [Hex]       [HSL]                  [dark one]
+  black-  */   #4D4D4D     hsl(0, 0%, 30.4%)      /* <-black
+  red-    */   #D65B65     hsl(355, 60%, 60%)     /* <-red
+  green-  */   #8CAE73     hsl( 95, 27%, 57%)     /* <-gren
+  yellow- */   #C58C57     hsl( 29, 49%, 56%)     /* <-yellow
+  Blue-   */   #4EA3E8     hsl(207, 77%, 61%)     /* <-blue
+  magenta-*/   #BA68D3     hsl(286, 55%, 62%)     /* <-purple
+  cyan-   */   #49A8B5     hsl(187, 42%, 50%)     /* <-cyan
+  White-  */   #B6BAC1     hsl(217, 8%, 73.8%)    /* <-white
+
+----------------------------------------------------------
+
+  BRIGHT COLORS`
+  Set to match the one dark theme. Normal colors are darker
+  than the atom theme.
+
+  [iterm]      [Hex]       [HSL]                  [dark one]
+  black-  */   #676767     hsl(0, 0%, 40.4%)      /* <-black
+  red-    */   #e06c75     hsl(355, 65%, 65%)     /* <-red
+  green-  */   #98c379     hsl( 95, 38%, 62%)     /* <-gren
+  yellow- */   #d19a66     hsl( 29, 54%, 61%)     /* <-yellow
+  Blue-   */   #61afef     hsl(207, 82%, 66%)     /* <-blue
+  magenta-*/   #c678dd     hsl(286, 60%, 67%)     /* <-purple
+  cyan-   */   #56b6c2     hsl(187, 47%, 55%)     /* <-cyan
+  White-  */   #b9bfc9     hsl(217, 13%, 76%)     /* <-white
+
+----------------------------------------------- */
