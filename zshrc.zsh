@@ -58,12 +58,18 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM="~/Files/Config/Shells/zsh/oh-my-zsh"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+#Automatically start a tmux session
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART_ONCE="true"
+ZSH_TMUX_AUTOCONNECT="true"
+ZSH_TMUX_FIXTERM="true"
+ZSH_TMUX_ITERM2="true"
+ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
+ZSH_TMUX_CONFIG="~/Config/Multiplexers/tmux.conf.tmux.conf"
+
+# Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
   brew
   colored-man-pages
@@ -76,8 +82,6 @@ plugins=(
   puddletown-common
   composer
   dash
-  dircycle
-  direnv
   docker
   puddletown-docker-compose
   puddletown-zsh
@@ -96,6 +100,7 @@ plugins=(
   puddletown-screen
   puddletown-update
   puddletown-vagrant
+  tmux
   z
   zsh-interactive-cd
   zsh-navigation-tools
