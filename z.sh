@@ -6,10 +6,10 @@
 /Users/Brent/Files/Notes/icons|7|1601880251
 /Users/Brent/Files|7|1601786745
 /Users/Brent/Config|3|1601880025
-/Users/Brent/Config/Terminals/iTerm|2|1601880096
 /Users/Brent/Documents/OSs|11|1601882069
+/Users/Brent/Config/Terminals/iTerm|2|1601880096
 /Volumes|7|1601112679
-/Users/Brent/Config/Shells/zsh|6|1601882278
+/Users/Brent/Config/Shells/zsh|7|1601882313
 /Users/Brent/Files/Notes|8|1601880181
 /Users/Brent/Files/Development/Projects|4|1601452609
 /|2|1601275129
