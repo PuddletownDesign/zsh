@@ -5,7 +5,7 @@
 # this way you won't be using old bash or rsync after installing from homebrew
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="~/Files/Config/bin:$PATH"
+export PATH="~/Config/bin:$PATH"
 
 # Path to Vagrant Config (Vagrant seems to be getting phased out)
 export VAGRANT_HOME="~/Documents/Vagrant/vagrant.d"
@@ -14,7 +14,8 @@ export VAGRANT_HOME="~/Documents/Vagrant/vagrant.d"
 export EDITOR=atom VISUAL=atom
 
 # Path to your oh-my-zsh framework installation.
-export ZSH=~/.oh-my-zsh
+export ZSH="/Users/Brent/Config/OhMyZSH"
+ZSH_CUSTOM="/Users/Brent/Config/OhMyZSH/custom"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,12 +59,18 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+
+#Automatically start a tmux session
+# ZSH_TMUX_AUTOSTART="true"
+# ZSH_TMUX_AUTOSTART_ONCE="true"
+# ZSH_TMUX_AUTOCONNECT="true"
+# ZSH_TMUX_FIXTERM="true"
+# ZSH_TMUX_ITERM2="true"
+# ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
+# ZSH_TMUX_CONFIG="~/Config/Multiplexers/tmux.conf"
+
+# Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
   brew
   colored-man-pages
@@ -76,8 +83,6 @@ plugins=(
   puddletown-common
   composer
   dash
-  dircycle
-  direnv
   docker
   puddletown-docker-compose
   puddletown-zsh
@@ -96,6 +101,7 @@ plugins=(
   puddletown-screen
   puddletown-update
   puddletown-vagrant
+  tmux
   z
   zsh-interactive-cd
   zsh-navigation-tools
@@ -113,13 +119,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='atom'
-else
-  export EDITOR='nano'
-fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -135,4 +134,4 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-source ~/Files/Config/Shells/zsh/iterm2_shell_integration.zsh
+source ~/Config/Shells/zsh/iterm2_shell_integration.zsh
