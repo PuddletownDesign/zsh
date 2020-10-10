@@ -6,6 +6,7 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="~/Config/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # Path to Vagrant Config (Vagrant seems to be getting phased out)
 export VAGRANT_HOME="~/Documents/Vagrant/vagrant.d"

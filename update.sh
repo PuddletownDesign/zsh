@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Dev/Config/ZSH
+cd ~/Config/Shells/zsh
 git fetch upstream
 git checkout mac
 git merge upstream/mac --no-edit

@@ -1,6 +1,5 @@
 #!/bin/bash
-
-cd ~/Dev/Config/Shells/zsh
+cd ~/Config/Shells/zsh
 git add .
-git commit -m "updated zsh preferences"
+git commit -m "`date +\"%Y-%m-%d\"` back up"
 git push origin mac
