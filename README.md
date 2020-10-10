@@ -41,7 +41,13 @@ If you want to just run the installer, or feel free to run each of the commands 
 ./install.sh
 ```
 
-#### What the installer does
+* * *
+
+## All about the installer
+
+The rest of this article covers what the installer does and manually installing if you chose not to use it.
+
+### What the installer does
 
 Feel free to run these commands yourself, or just get them all done at once with the installer script. If you forked this repo, and also have stuff in your existing zshrc file you want you keep, you're probably knowledgable to just run these commands yourself and take your time.
 
