@@ -20,26 +20,38 @@ This will let you backup your configs on github and share them with others
 
 I have my install located in the `~Config/Shells/zsh` folder on mac and on Linux. Unless you're comfortable tracking down non working symlinks or if you're going to be using other tools of mine I recommend that location. It's semantic and accessible.
 
-## Select the correct branch for your OS
-
 ```bash
-cd ZSH && git checkout origin/linux && git checkout linux
+take ~/Config # take is a shorthand for mkdir -p && cd into it
+
+# Clone the repo replace 'PuddletownDesign' with your user name if you forked it
+git clone https://github.com/PuddletownDesign/zsh
+
+# go in to the zsh folder
+cd zsh
 ```
+
+## Select the correct branch for your OS
 
 Existing branches are:
 
--   `mac`
--   `linux` - for desktops
--   `linux-headless` - for servers or systems without a GUI
+-   `macOS` - _this is the default branch. For all macOS systems._
+-   `linux` - _For Debian based Linux installs (Like Mint or Ubuntu) that have a desktop installed_
+-   `linux-headless` - _For Debian based Linux installs that do not use a desktop (Like a server or Android)_
+
+```bash
+git checkout origin/linux && git checkout linux
+```
 
 ### Run the installer
 
-If you want to just run the installer, or feel free to run each of the commands manually below and make alterations to your liking.
+If you want to just run the installer, or
 
 ```bash
 # Run the installer script
 ./install.sh
 ```
+
+And that's it! you should be up and running. If you don't want to run the installer, the rest of the guide past this point outlines what the installer does and shows you the commands used, so that you can make your own modifications if you please.
 
 * * *
 
@@ -47,28 +59,23 @@ If you want to just run the installer, or feel free to run each of the commands 
 
 The rest of this article covers what the installer does and manually installing if you chose not to use it.
 
-### What the installer does
-
 Feel free to run these commands yourself, or just get them all done at once with the installer script. If you forked this repo, and also have stuff in your existing zshrc file you want you keep, you're probably knowledgable to just run these commands yourself and take your time.
 
-##### Removes any existing `.zshrc` in the home folder
+### Removes any existing `.zshrc` in the home folder
 
-```bash
+\`4``bash
 rm ~/.zshrc
-rm ~/.z
 rm ~/.zcompdump
 rm ~/.zsh_history
-```
 
-##### Sets this repo as the upstream
+    ##### Sets this repo as the upstream
 
-If you want to pull down any changes from me in the future
+    If you want to pull down any changes from me in the future
 
-```bash
-mkdir -p ~/Configs/Shells
+    ```bash
+    mkdir -p ~/Configs/Shells
 
-git remote add upstream https://github.com/PuddletownDesign/zsh
-```
+    git remote add upstream https://github.com/PuddletownDesign/zsh
 
 ##### The installer script will create the following symlinks in your user folder:
 
