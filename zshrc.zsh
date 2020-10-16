@@ -1,3 +1,6 @@
+# `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
+# ---------------------------------------------------------------
+
 # Set up your Paths to binaries
 #
 # - I've set the existing $PATH after the new path so that your installations
@@ -5,18 +8,16 @@
 # this way you won't be using old bash or rsync after installing from homebrew
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="~/Config/bin:$PATH"
-export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="$HOME/Config/bin:$PATH"
 
-# Path to Vagrant Config (Vagrant seems to be getting phased out)
-export VAGRANT_HOME="~/Documents/Vagrant/vagrant.d"
-
-# Path to editor of choice
-export EDITOR=atom VISUAL=atom
+# Folder where zsh files are stored
+ZSH_CONFIG="$HOME/Config/Shells/zsh"
 
 # Path to your oh-my-zsh framework installation.
-export ZSH="/Users/Brent/Config/OhMyZSH"
-ZSH_CUSTOM="/Users/Brent/Config/OhMyZSH/custom"
+export ZSH="$HOME/.oh-my-zsh"
+
+# oh my zsh custom user folder
+ZSH_CUSTOM="$ZSH_CONFIG/OhMyZsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -24,7 +25,7 @@ ZSH_CUSTOM="/Users/Brent/Config/OhMyZSH/custom"
 ZSH_THEME="puddletown"
 # ZSH_THEME="random"
 
-# Uncomment the fol lowing line to use case-sensitive completion.
+# Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="false"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
@@ -60,16 +61,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-
-
-#Automatically start a tmux session
-# ZSH_TMUX_AUTOSTART="true"
-# ZSH_TMUX_AUTOSTART_ONCE="true"
-# ZSH_TMUX_AUTOCONNECT="true"
-# ZSH_TMUX_FIXTERM="true"
-# ZSH_TMUX_ITERM2="true"
-# ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
-# ZSH_TMUX_CONFIG="~/Config/Multiplexers/tmux.conf"
 
 # Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
@@ -109,9 +100,7 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-# Uninstalled Plugins
-# puddletown-docker
-
+# The path to the oh my zsh start up script. located in the .oh-my-zsh folder.
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -124,7 +113,7 @@ export LANG=en_US.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -135,4 +124,4 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-source ~/Config/Shells/zsh/iterm2_shell_integration.zsh
+source $HOME/Config/Shells/zsh/iterm2_shell_integration.zsh
