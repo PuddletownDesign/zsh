@@ -2,5 +2,5 @@
 
 cd ~/Config/Shells/zsh
 git fetch upstream
-git checkout macOS
-git merge upstream/macOS --no-edit
+git checkout debian-desktop
+git merge upstream/debian-desktop --no-edit

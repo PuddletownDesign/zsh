@@ -4,11 +4,11 @@
 git remote add upstream https://github.com/PuddletownDesign/zsh
 
 # Remove any existing zsh installation files
-rm ~/.zshrc 2> /dev/null
-rm ~/.zsh_history 2> /dev/null
-rm ~/.zshenv 2> /dev/null
-rm ~/.zlogin 2> /dev/null
-rm ~/.zprofile 2> /dev/null
+mv ~/.zshrc ~/.zshrc-old  2> /dev/null
+mv ~/.zsh_history ~/.zsh_history-old 2> /dev/null
+mv ~/.zshenv ~/.zshenv-old 2> /dev/null
+mv ~/.zlogin ~/.zlogin-old 2> /dev/null
+mv ~/.zprofile ~/.zprofile-old 2> /dev/null
 
 # Create a local history file
 touch history.log

@@ -75,6 +75,7 @@ plugins=(
   puddletown-common
   composer
   dash
+  debian
   docker
   puddletown-docker-compose
   puddletown-zsh

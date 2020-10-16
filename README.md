@@ -37,16 +37,16 @@ cd zsh
 Existing branches are:
 
 -   `macOS` - _this is the default branch. For all macOS systems._
--   `linux` - _For Debian based Linux installs that do not use a desktop (Like a server or Android)_
--   `linuxDesktop` - _For Debian based Linux installs (Like Mint or Ubuntu) that have a desktop installed_
+-   `debian-desktop` - _For Debian based Linux installs (Like Mint or Ubuntu) that have a desktop installed_
+-   `debian` - _For Debian based Linux installs that do not use a desktop (Like a server or Android)_
 
 ```bash
-git checkout origin/linux && git checkout linux
+git checkout origin/debian-desktop && git checkout debian-desktop
 ```
 
 ### Run the installer
 
-If you want to just run the installer, or
+If you want to run the installer. It will take care of setting everything up for you. Otherwise you can keep reading and go through each of the installer commands to customize it.
 
 ```bash
 # Run the installer script
@@ -63,14 +63,14 @@ The rest of this article covers what the installer does and manually installing 
 
 Feel free to run these commands yourself, or just get them all done at once with the installer script. If you forked this repo, and also have stuff in your existing zshrc file you want you keep, you're probably knowledgable to just run these commands yourself and take your time.
 
-### Removes any existing `.zshrc` in the home folder
+### Archive any existing zsh configurations in the home folder
 
 ```bash
-rm ~/.zshrc 2> /dev/null
-rm ~/.zsh_history 2> /dev/null
-rm ~/.zshenv 2> /dev/null
-rm ~/.zlogin 2> /dev/null
-rm ~/.zprofile 2> /dev/null
+mv ~/.zshrc ~/.zshrc-old  2> /dev/null
+mv ~/.zsh_history ~/.zsh_history-old 2> /dev/null
+mv ~/.zshenv ~/.zshenv-old 2> /dev/null
+mv ~/.zlogin ~/.zlogin-old 2> /dev/null
+mv ~/.zprofile ~/.zprofile-old 2> /dev/null
 ```
 
 # Sets this repo as the upstream
@@ -93,70 +93,68 @@ touch history.log
 
 # Link each of the configuration files to the home directory
 
+```bash
 ln -s $PWD/zshrc.zsh ~/.zshrc 2> /dev/null
 ln -s $PWD/history.log ~/.zsh_history 2> /dev/null
 ln -s $PWD/zshenv.zsh ~/.zshenv 2> /dev/null
 ln -s $PWD/zlogin.zsh ~/.zlogin 2> /dev/null
 ln -s $PWD/zprofile.zsh ~/.zprofile 2> /dev/null
+```
 
-    ##### Deletes the `.git` folder out of the directory and creates a new one
+##### Sets this repository as an upstream remote
 
-    This way if you cloned the repo, you will be able to track your own changes independent of my timeline
+`git remote add upstream https://github.com/PuddletownDesign/ZSH`
 
-    ##### Sets this repository as an upstream remote
+If you want to fetch changes or updates that I make you can run the updater.
 
-    `git remote add upstream https://github.com/PuddletownDesign/ZSH`
+##### Install Oh-my-zsh
 
-    If you want to fetch changes or updates that I make you can run the updater.
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
 
-    ##### Install Oh-my-zsh
+## Oh my zsh
 
-    ```bash
-    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-    ```
+Inside the `oh-my-zsh` folder, you will find `plugins` & `themes`
 
-    ## Oh my zsh
+I've registered all of my aliases in their own plugins. These are set in the `zshrc` file in the plugins string.
 
-    Inside the `oh-my-zsh` folder, you will find `plugins` & `themes`
+To activate the plugins and themes and for best practice, the `custom` folder in oh my zsh is symlinked to the `oh-my-zsh` folder. This way everything is in one place. to activate it run the following command.
 
-    I've registered all of my aliases in their own plugins. These are set in the `zshrc` file in the plugins string.
+```bash
+rm ~/.oh-my-zsh/custom
 
-    To activate the plugins and themes and for best practice, the `custom` folder in oh my zsh is symlinked to the `oh-my-zsh` folder. This way everything is in one place. to activate it run the following command.
+ln -s oh-my-zsh ~/.oh-my-zsh/custom
+```
 
-    ```bash
-    rm ~/.oh-my-zsh/custom
+these commands would have been executed by the installer if you chose to run it.
 
-    ln -s oh-my-zsh ~/.oh-my-zsh/custom
-    ```
+### oh my zsh plugins
 
-    these commands would have been executed by the installer if you chose to run it.
+-   `puddletown-zsh`
+-   `puddletown-common`
+-   `puddletown-docker`
+-   `puddletown-docker-compose`
+-   `puddletown-docker-machine`
+-   `puddletown-frameworks`
+-   `puddletown-git`
+-   `puddletown-jekyll`
+-   `puddletown-linters`
+-   `puddletown-mac`
+-   `puddletown-network`
+-   `puddletown-php`
+-   `puddletown-postgres`
+-   `puddletown-screen`
+-   `puddletown-update`
+-   `puddletown-vagrant`
+-   `puddletown-brew`
 
-    ### oh my zsh plugins
+Just remove the corresponding string in the `zshrc.sh` file for any you don't need.
 
-    -   `puddletown-zsh`
-    -   `puddletown-common`
-    -   `puddletown-docker`
-    -   `puddletown-docker-compose`
-    -   `puddletown-docker-machine`
-    -   `puddletown-frameworks`
-    -   `puddletown-git`
-    -   `puddletown-jekyll`
-    -   `puddletown-linters`
-    -   `puddletown-mac`
-    -   `puddletown-network`
-    -   `puddletown-php`
-    -   `puddletown-postgres`
-    -   `puddletown-screen`
-    -   `puddletown-update`
-    -   `puddletown-vagrant`
-    -   `puddletown-brew`
+### oh my zsh themes
 
-    Just remove the corresponding string in the `zshrc.sh` file for any you don't need.
+I've included my custom theme `puddletown.zsh-theme`. This will be set by default in the `zshrc.sh` file. There's a lot of [great themes availble](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
-    ### oh my zsh themes
+## That's enough for now
 
-    I've included my custom theme `puddletown.zsh-theme`. This will be set by default in the `zshrc.sh` file. There's a lot of [great themes availble](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
-
-    ## That's enough for now
-
-    You've got it installed and should be up and running. Happy zshing :)
+You've got it installed and should be up and running. Happy zshing :)
