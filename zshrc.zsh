@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-  # `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
-=======
 # `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
->>>>>>> 98d80ec0e85ba61d64d7b43ca0f84bd43810feba
 # ---------------------------------------------------------------
 
 # Set up your Paths to binaries
@@ -12,11 +8,7 @@
 # this way you won't be using old bash or rsync after installing from homebrew
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-<<<<<<< HEAD
 export PATH="~/Config/bin:$PATH"
-=======
-export PATH="$HOME/Config/bin:$PATH"
->>>>>>> 98d80ec0e85ba61d64d7b43ca0f84bd43810feba
 
 # Folder where zsh files are stored
 ZSH_CONFIG="$HOME/Config/Shells/zsh"
@@ -25,7 +17,7 @@ ZSH_CONFIG="$HOME/Config/Shells/zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # oh my zsh custom user folder
-ZSH_CUSTOM="$ZSH_CONFIG/OhMyZsh"
+ZSH_CUSTOM="$ZSH_CONFIG/oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -108,12 +100,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-<<<<<<< HEAD
 # Uninstalled Plugins
 # puddletown-docker
 
-=======
->>>>>>> 98d80ec0e85ba61d64d7b43ca0f84bd43810feba
 # The path to the oh my zsh start up script. located in the .oh-my-zsh folder.
 source $ZSH/oh-my-zsh.sh
 

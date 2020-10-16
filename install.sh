@@ -1,35 +1,33 @@
 #!/bin/bash
 
+# Set the upstream repo
 git remote add upstream https://github.com/PuddletownDesign/zsh
 
+# Remove any existing zsh installation files
 rm ~/.zshrc 2> /dev/null
-<<<<<<< HEAD
 rm ~/.zsh_history 2> /dev/null
 rm ~/.zshenv 2> /dev/null
 rm ~/.zlogin 2> /dev/null
 rm ~/.zprofile 2> /dev/null
-=======
-rm ~/.zcompdump 2> /dev/null
-rm ~/.zsh_history 2> /dev/null
->>>>>>> 98d80ec0e85ba61d64d7b43ca0f84bd43810feba
 
-touch {history.log}
+# Create a local history file
+touch history.log
 
-
+# Link each of the configuration files to the home directory
 ln -s $PWD/zshrc.zsh ~/.zshrc 2> /dev/null
-<<<<<<< HEAD
 ln -s $PWD/history.log ~/.zsh_history 2> /dev/null
 ln -s $PWD/zshenv.zsh ~/.zshenv 2> /dev/null
 ln -s $PWD/zlogin.zsh ~/.zlogin 2> /dev/null
 ln -s $PWD/zprofile.zsh ~/.zprofile 2> /dev/null
-=======
-ln -s $PWD/zcompdump.sh ~/.zcompdump 2> /dev/null
-ln -s $PWD/history.log ~/.zsh_history 2> /dev/null
->>>>>>> 98d80ec0e85ba61d64d7b43ca0f84bd43810feba
 
+# Download and install oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+# Link the oh-my-zsh folder to the location of the custom folder in the main ohmyzsh install
+  # this is not strictly necessary as you can defile an
+  # alternate location for the custom folder in zshrc
 rm ~/.oh-my-zsh/custom 2> /dev/null
 ln -s oh-my-zsh ~/.oh-my-zsh/custom 2> /dev/null
 
-echo "set the theme in preferences in the lower right to load from a folder"
+# Let the user know that the process is complete
+echo "zsh has been installed"

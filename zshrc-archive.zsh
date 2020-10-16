@@ -1,8 +1,8 @@
 # `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
+
 # ---------------------------------------------------------------
 
 # Set up your Paths to binaries
-#
 # - I've set the existing $PATH after the new path so that your installations
 # will be read before the existing ones...
 # this way you won't be using old bash or rsync after installing from homebrew
