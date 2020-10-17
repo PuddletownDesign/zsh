@@ -2,12 +2,6 @@
 
 I use ZSH as my daily driver for just about all non multimedia tasks.
 
-I provide custom ZSH configurations for:
-
--   macOS
--   Debian based Linux Desktop
--   Debian based Linux Headless
-
 If you're interested in using some of these settings, I recommend forking my repo and then setting it as upstream so you can fetch any updates that I push. I would also love for people to send me pull requests or tip me off to any features of the shell I might be missing.
 
 I've also a [small collection of guides for using and learning about ZSH](guide/README.md)
@@ -23,37 +17,18 @@ This will let you backup your configs on github and share them with others
 I have my install located in the `~/Config/Shells/zsh` folder on mac and on Linux. Unless you're comfortable tracking down non working symlinks or if you're going to be using other tools of mine I recommend that location. It's semantic and accessible.
 
 ```bash
-take ~/Config # take is a shorthand for mkdir -p && cd into it
+mkdir -p ~/Config/Shells && cd ~/Config/Shells
 
 # Clone the repo replace 'PuddletownDesign' with your user name if you forked it
 git clone https://github.com/PuddletownDesign/zsh
 
 # go in to the zsh folder
 cd zsh
-```
 
-## Select the correct branch for your OS
-
-Existing branches are:
-
--   `macOS` - _this is the default branch. For all macOS systems._
--   `debian-desktop` - _For Debian based Linux installs (Like Mint or Ubuntu) that have a desktop installed_
--   `debian` - _For Debian based Linux installs that do not use a desktop (Like a server or Android)_
-
-```bash
-git checkout origin/debian-desktop && git checkout debian-desktop
-```
-
-### Run the installer
-
-If you want to run the installer. It will take care of setting everything up for you. Otherwise you can keep reading and go through each of the installer commands to customize it.
-
-```bash
-# Run the installer script
 ./install.sh
 ```
 
-And that's it! you should be up and running. If you don't want to run the installer, the rest of the guide past this point outlines what the installer does and shows you the commands used, so that you can make your own modifications if you please.
+And that's it! you should be up and running. If you don't want to run the install.sh, the rest of the guide past this point outlines what the installer does and shows you the commands used, so that you can make your own modifications if you please.
 
 * * *
 
