@@ -69,15 +69,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
-# Mac Specific
-  brew
-  puddletown-brew
-  puddletown-mac
-# Linux Specic
-  puddletown-apt
-# General
   colored-man-pages
-  chucknorris
   command-not-found
   colorize
   copydir
@@ -86,7 +78,6 @@ plugins=(
   puddletown-common
   composer
   dash
-  debian
   docker
   puddletown-arbitrary-brent-stuff
   puddletown-docker-compose
@@ -107,10 +98,30 @@ plugins=(
   tmux
   thefuck
   z
+  web-search
   zsh-interactive-cd
   zsh-navigation-tools
   zsh-syntax-highlighting
+
+  # Deactivated
+  # chucknorris
 )
+
+# Platform Specific plugins
+if [[ $OSTYPE==darwin* ]]; then
+  # Mac Specific Plugins
+  plugins+=(
+    brew
+    puddletown-brew
+    puddletown-mac
+  )
+elif [[ $OSTYPE==linux* ]]; then
+  # Linux Specific
+  plugins+=(
+    puddletown-apt
+    debian
+  )
+fi
 
 # Uninstalled Plugins
 # puddletown-docker
