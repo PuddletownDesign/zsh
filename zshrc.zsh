@@ -19,7 +19,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="puddletown"
+
+# Test if this is an ssh connection, if so load a slightly different style sheet
+if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_THEME="puddletown-ssh"
+else
+  ZSH_THEME="puddletown"
+fi
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -96,7 +102,6 @@ plugins=(
   puddletown-update
   puddletown-vagrant
   tmux
-  thefuck
   z
   web-search
   zsh-interactive-cd
@@ -114,6 +119,7 @@ if [[ $OSTYPE==darwin* ]]; then
     brew
     puddletown-brew
     puddletown-mac
+    thefuck
   )
 elif [[ $OSTYPE==linux* ]]; then
   # Linux Specific
