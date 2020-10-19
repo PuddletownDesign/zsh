@@ -32,9 +32,6 @@ ln -s $PWD/zshenv.zsh ~/.zshenv 2> /dev/null
 ln -s $PWD/zlogin.zsh ~/.zlogin 2> /dev/null
 ln -s $PWD/zprofile.zsh ~/.zprofile 2> /dev/null
 
-# Install Syntax Highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
 # Let the user know that the process is complete
 echo "You are ready to ZSH!"
 

@@ -104,6 +104,8 @@ plugins=(
   tmux
   z
   web-search
+  zsh-autosuggestions
+  zsh-completions
   zsh-interactive-cd
   zsh-navigation-tools
 
@@ -138,7 +140,7 @@ fi
 # puddletown-docker
 
 # The path to the oh my zsh start up script. located in the .oh-my-zsh folder.
-source $ZSH/oh-my-zsh.sh
+
 
 # oh my zsh custom user folder
 ZSH_CUSTOM="$ZSH_CONFIG/oh-my-zsh"
@@ -163,3 +165,6 @@ autoload -Uz compinit && compinit
 
 # Load shell integrations
 source $HOME/Config/Shells/zsh/iterm2_shell_integration.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/oh-my-zsh.sh
