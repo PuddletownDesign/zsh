@@ -1,4 +1,4 @@
-s# `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
+s# `.zshrc` is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
 # ---------------------------------------------------------------
 
 # Set up your Paths to binaries
