@@ -1,4 +1,4 @@
-# `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
+s# `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
 # ---------------------------------------------------------------
 
 # Set up your Paths to binaries
@@ -8,7 +8,7 @@
 # this way you won't be using old bash or rsync after installing from homebrew
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="~/Config/bin:$PATH"
+export PATH="Users/Brent/Config/bin:$PATH"
 
 # Folder where zsh files are stored
 ZSH_CONFIG="$HOME/Config/Shells/zsh"
@@ -122,6 +122,12 @@ if [[ $OSTYPE==darwin* ]]; then
     thefuck
   )
 elif [[ $OSTYPE==linux* ]]; then
+  # Linux Specific
+  plugins+=(
+    puddletown-apt
+    debian
+  )
+elif [[ $OSTYPE==*android* ]]; then
   # Linux Specific
   plugins+=(
     puddletown-apt
