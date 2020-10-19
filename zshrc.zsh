@@ -106,7 +106,6 @@ plugins=(
   web-search
   zsh-interactive-cd
   zsh-navigation-tools
-  zsh-syntax-highlighting
 
   # Deactivated
   # chucknorris
