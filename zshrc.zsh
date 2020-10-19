@@ -107,8 +107,9 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-interactive-cd
+  zsh-history-substring-search
   zsh-navigation-tools
-
+  zsh-syntax-highlighting
   # Deactivated
   # chucknorris
 )
@@ -164,7 +165,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
+source /usr/local/share/antigen/antigen.zsh
 source $HOME/Config/Shells/zsh/iterm2_shell_integration.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh

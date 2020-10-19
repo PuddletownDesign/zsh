@@ -6,15 +6,6 @@ git remote add upstream https://github.com/PuddletownDesign/zsh
 # Download and install oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-# Link the oh-my-zsh folder to the location of the
-# custom folder in the main ohmyzsh install.
-# this is not strictly necessary as you can defile an
-# alternate location for the custom folder in zshrc
-# however some plugins install with the full path,
-# so just to be on the safe side...
-rm -rf ~/.oh-my-zsh/custom 2> /dev/null
-ln -s $PWD/oh-my-zsh ~/.oh-my-zsh/custom 2> /dev/null
-
 # Create a local history file
 touch history.log
 
