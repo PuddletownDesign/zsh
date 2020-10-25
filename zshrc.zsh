@@ -165,6 +165,5 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-source /usr/local/share/antigen/antigen.zsh
 source $HOME/Config/Shells/zsh/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
