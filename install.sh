@@ -6,6 +6,8 @@ git remote add upstream https://github.com/PuddletownDesign/zsh
 # Download and install oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+# Get a couple of ZSH plugins
+
 # Create a local history file
 touch history.log
 
