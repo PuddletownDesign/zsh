@@ -106,38 +106,30 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-interactive-cd
-  # zsh-history-substring-search
-  # zsh-navigation-tools
-  # zsh-syntax-highlighting
-  # Deactivated
+  zsh-navigation-tools
+  zsh-history-substring-search
+  zsh-syntax-highlighting
+
+  brew
+  puddletown-brew
+  puddletown-mac
+  thefuck
+  # puddletown-dockers
   # chucknorris
 )
 
 # Platform Specific plugins
-if [[ $OSTYPE==darwin* ]]; then
-  # Mac Specific Plugins
-  plugins+=(
-    brew
-    puddletown-brew
-    puddletown-mac
-    thefuck
-  )
-elif [[ $OSTYPE==linux* ]]; then
-  # Linux Specific
-  plugins+=(
-    puddletown-apt
-    debian
-  )
-elif [[ $OSTYPE==*android* ]]; then
-  # Linux Specific
-  plugins+=(
-    puddletown-apt
-    debian
-  )
-fi
+# if [[ $OSTYPE==darwin* ]]; then
+#   # Mac Specific Plugins
+#
+# elif [[ $OSTYPE==linux* ]]; then
+#   # Linux Specific
+#
+# elif [[ $OSTYPE==*android* ]]; then
+#   # Linux Specific
+#
+# fi
 
-# Uninstalled Plugins
-# puddletown-docker
 
 # The path to the oh my zsh start up script. located in the .oh-my-zsh folder.
 
@@ -165,4 +157,6 @@ autoload -Uz compinit && compinit
 
 # Load shell integrations
 source $ZSH_CONFIG/iterm2_shell_integration.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH/oh-my-zsh.sh
