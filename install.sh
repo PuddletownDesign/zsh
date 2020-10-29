@@ -26,5 +26,5 @@ ln -s $PWD/zprofile.zsh ~/.zprofile 2> /dev/null
 # Let the user know that the process is complete
 echo "You are ready to ZSH!"
 
-#
+# Reload
 exec zsh

@@ -81,7 +81,6 @@ plugins=(
   copydir
   copyfile
   common-aliases
-  puddletown-common
   composer
   dash
   docker
@@ -107,9 +106,9 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   zsh-interactive-cd
-  zsh-history-substring-search
-  zsh-navigation-tools
-  zsh-syntax-highlighting
+  # zsh-history-substring-search
+  # zsh-navigation-tools
+  # zsh-syntax-highlighting
   # Deactivated
   # chucknorris
 )
@@ -165,5 +164,5 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-source $HOME/Config/Shells/zsh/iterm2_shell_integration.zsh
+source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
