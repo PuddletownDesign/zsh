@@ -8,7 +8,7 @@
 # this way you won't be using old bash or rsync after installing from homebrew
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="Users/Brent/Config/bin:$PATH"
+export PATH="/Users/Brent/Config/bin:$PATH"
 
 # Folder where zsh files are stored
 ZSH_CONFIG="$HOME/Config/Shells/zsh"
@@ -75,6 +75,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  brew
   colored-man-pages
   command-not-found
   colorize
@@ -85,6 +86,8 @@ plugins=(
   dash
   docker
   puddletown-arbitrary-brent-stuff
+  puddletown-apt
+  puddletown-brew
   puddletown-docker-compose
   puddletown-zsh
   puddletown-docker
@@ -94,6 +97,7 @@ plugins=(
   puddletown-git
   puddletown-jekyll
   puddletown-linters
+  puddletown-mac
   puddletown-network
   puddletown-php
   puddletown-postgres
@@ -107,12 +111,11 @@ plugins=(
   zsh-completions
   zsh-interactive-cd
   zsh-navigation-tools
+
   zsh-history-substring-search
   zsh-syntax-highlighting
 
-  brew
-  puddletown-brew
-  puddletown-mac
+
   thefuck
   # puddletown-dockers
   # chucknorris

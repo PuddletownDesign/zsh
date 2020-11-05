@@ -6,7 +6,9 @@ git remote add upstream https://github.com/PuddletownDesign/zsh
 # Download and install oh my zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-# Get a couple of ZSH plugins
+# Get a couple of ZSH plugins - Look into replacing these git clones with an antigen script - test this in catalina
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM/plugins/zsh-syntax-highlighting}
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM/plugins/zsh-history-substring-search}
 
 # Create a local history file
 touch history.log
