@@ -4,7 +4,7 @@ I use ZSH as my daily driver for just about all non multimedia tasks.
 
 If you're interested in using some of these settings, I recommend forking my repo and then setting it as upstream so you can fetch any updates that I push. I would also love for people to send me pull requests or tip me off to any features of the shell I might be missing.
 
-I've also a [small collection of guides for using and learning about ZSH](guide/README.md)
+I've also a [small collection of guides for using and learning about ZSH](guides/README.md)
 
 ## Install Instructions
 

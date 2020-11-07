@@ -1,5 +1,5 @@
 # Update all binaries and apps installed through brew
-alias update='brew update && brew upgrade && brew cu -ay && brew missing && apm update --no-confirm && omz update && brew doctor && brew cleanup'
+alias update='brew update && brew upgrade && brew cu -afy && brew missing && apm update --no-confirm && omz update && brew doctor && brew cleanup'
 
 # Back up all configs and preferences
 alias backupconfig="cd ~/Files/Config/bin/ && ./backup-configs.sh"
