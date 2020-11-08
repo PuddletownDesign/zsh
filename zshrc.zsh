@@ -111,13 +111,10 @@ plugins=(
   zsh-completions
   zsh-interactive-cd
   zsh-navigation-tools
-
-  zsh-history-substring-search
-  zsh-syntax-highlighting
-
-
-  thefuck
-  # puddletown-dockers
+  # zsh-history-substring-search
+  # zsh-syntax-highlighting
+  # thefuck
+  # puddletown-docker
   # chucknorris
 )
 
@@ -163,3 +160,5 @@ source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH/oh-my-zsh.sh
+
+neofetch | lolcat
