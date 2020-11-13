@@ -111,8 +111,8 @@ plugins=(
   zsh-completions
   zsh-interactive-cd
   zsh-navigation-tools
-  # zsh-history-substring-search
-  # zsh-syntax-highlighting
+  zsh-history-substring-search
+  zsh-syntax-highlighting
   # thefuck
   # puddletown-docker
   # chucknorris
@@ -138,7 +138,7 @@ plugins=(
 ZSH_CUSTOM="$ZSH_CONFIG/oh-my-zsh"
 
 # User configuration
-export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/share/man"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -156,9 +156,11 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-# source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-# source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
 
-neofetch
+eval $(thefuck --alias)
+
+neofetch | lolcat
