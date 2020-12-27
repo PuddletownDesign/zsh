@@ -9,6 +9,11 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/Brent/Config/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export NVM_DIR="$HOME/Config/Node" # Node Version Manager
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \
+   . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Folder where zsh files are stored
 ZSH_CONFIG="$HOME/Config/Shells/zsh"
@@ -105,8 +110,8 @@ plugins=(
   puddletown-update
   puddletown-vagrant
   tmux
-  z
   web-search
+  z
   zsh-autosuggestions
   zsh-completions
   zsh-interactive-cd
@@ -138,7 +143,7 @@ plugins=(
 ZSH_CUSTOM="$ZSH_CONFIG/oh-my-zsh"
 
 # User configuration
-export MANPATH="/usr/local/share/man"
+export MANPATH="/usr/local/share/man:/usr/share/man"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -162,5 +167,3 @@ source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
 
 eval $(thefuck --alias)
-
-neofetch | lolcat

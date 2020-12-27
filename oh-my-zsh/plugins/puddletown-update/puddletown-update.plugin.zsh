@@ -2,7 +2,7 @@
 #
 # Platform Specific plugins
 if [[ $OSTYPE==darwin* ]]; then
-  alias update='brew update | lolcat && brew upgrade && brew cu -aiy && brew missing && apm update --no-confirm && omz update && brew doctor && brew cleanup'
+  alias update='brew update && brew upgrade && brew cu -ay && brew missing && apm update --no-confirm && omz update && brew cleanup && brew doctor'
 
   # Back up all configs and preferences
   alias backupconfig="cd ~/Files/Config/bin/ && ./backup-configs.sh"
