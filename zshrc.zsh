@@ -91,7 +91,6 @@ plugins=(
   dash
   docker
   puddletown-arbitrary-brent-stuff
-  puddletown-apt
   puddletown-brew
   puddletown-docker-compose
   puddletown-zsh
@@ -118,25 +117,7 @@ plugins=(
   zsh-navigation-tools
   zsh-history-substring-search
   zsh-syntax-highlighting
-  # thefuck
-  # puddletown-docker
-  # chucknorris
 )
-
-# Platform Specific plugins
-# if [[ $OSTYPE==darwin* ]]; then
-#   # Mac Specific Plugins
-#
-# elif [[ $OSTYPE==linux* ]]; then
-#   # Linux Specific
-#
-# elif [[ $OSTYPE==*android* ]]; then
-#   # Linux Specific
-#
-# fi
-
-
-# The path to the oh my zsh start up script. located in the .oh-my-zsh folder.
 
 
 # oh my zsh custom user folder
