@@ -12,11 +12,11 @@ alias bl='brew list'
 alias bs='brew search'
 alias bu='brew uninstall'
 alias bz='brew zap'
-alias bc='brew cask'
-alias bci='brew cask install'
-alias bcl='brew cask list'
-alias bcu='brew cask zap'
-alias bcz='brew cask zap'
+alias bc='brew --cask'
+alias bci='brew install --cask'
+alias bcl='brew list --cask '
+alias bcu='brew zap --cask'
+alias bcz='brew zap --cask'
 
 fi
 

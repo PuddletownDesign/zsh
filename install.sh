@@ -3,10 +3,6 @@
 # Set the upstream repo
 git remote add upstream https://github.com/PuddletownDesign/zsh
 
-# Download and install oh my zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-
 # Create a local history file
 touch history.log
 
@@ -25,7 +21,12 @@ ln -s $PWD/zlogin.zsh ~/.zlogin 2> /dev/null
 ln -s $PWD/zprofile.zsh ~/.zprofile 2> /dev/null
 
 # Let the user know that the process is complete
-echo "You are ready to ZSH!"
+echo "Zally puth ta z shells bi ta Z shore!"
+echo "..."
+echo "🙄"
+echo "whatever..."
+echo "Z life is gonna get... "
+echo "nevermind..."
 
 # Reload
 exec zsh

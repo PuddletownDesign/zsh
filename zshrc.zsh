@@ -161,6 +161,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
+source /usr/local/share/zsh/site-functions
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH_CONFIG/iterm2_shell_integration.zsh
