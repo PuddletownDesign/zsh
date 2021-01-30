@@ -1,19 +1,22 @@
 # `.zshrc` is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
 # ---------------------------------------------------------------
 
+# The Best Start up script
+# fortune -o | cowsay -f cheese | lolcat
+
+# Node Version Manager
+export NVM_DIR="$HOME/Config/Node:$PATH"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \
+   . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # Set up your Paths to binaries
 #
 # - I've set the existing $PATH after the new path so that your installations
 # will be read before the existing ones...
 # this way you won't be using old bash or rsync after installing from homebrew
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/Brent/Config/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export NVM_DIR="$HOME/Config/Node" # Node Version Manager
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \
-   . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+PATH="/usr/local/sbin:$PATH"
+PATH="$HOME/Config/bin:$PATH"
 
 # Folder where zsh files are stored
 ZSH_CONFIG="$HOME/Config/Shells/zsh"

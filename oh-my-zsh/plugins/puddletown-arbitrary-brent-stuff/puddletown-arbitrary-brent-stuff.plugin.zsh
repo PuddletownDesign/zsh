@@ -9,7 +9,9 @@ alias a='atom'
 # Typora
 alias m="open -a typora"
 
-
+# Dates
+alias timestamp='date +"%y-%m-%d %H:%M:%S %z"'
+alias now='date +"%A %B %d, %Y @ %H:%M %Z"' 
 
 ## Let's play dark castle
 alias oldmac='cd ~/Files/Games/Dark\ Castle/ && open Disk603.dsk && open hfs10M.DSK && open BDCImage.hfv'
@@ -26,3 +28,4 @@ alias ytflac='youtube-dl -x --audio-format flac --embed-thumbnail'
 alias archive_folder='cp -R "/Users/Brent/Config/Mac/- Archive/" "./Archive"'
 
 alias fswatch='fswatch --batch-marker="________________________" --event-flag-separator=" | " -rLtx'
+
