@@ -139,3 +139,4 @@ source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
 
 # eval $(thefuck --alias)
+fortune -o | cowsay -f cheese | lolcat
