@@ -1,25 +1,15 @@
 # `.zshrc` is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
 # ---------------------------------------------------------------
 
-# The Best Start up script
-# fortune -o | cowsay -f cheese | lolcat
-
-# Node Version Manager
-export NVM_DIR="$HOME/Config/Node:$PATH"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \
-   . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # Set up your Paths to binaries
 #
 # - I've set the existing $PATH after the new path so that your installations
 # will be read before the existing ones...
 # this way you won't be using old bash or rsync after installing from homebrew
-PATH="/usr/local/sbin:$PATH"
-PATH="$HOME/Config/bin:$PATH"
+# PATH="/usr/local/sbin:$PATH"
 
 # Folder where zsh files are stored
-ZSH_CONFIG="$HOME/Config/Shells/zsh"
+ZSH_CONFIG="$HOME/config/zsh"
 
 # Path to your oh-my-zsh framework installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -74,7 +64,7 @@ COMPLETION_WAITING_DOTS="true"
 # Disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="false"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Change the command execution time
 # stamp shown in the history command output.
@@ -83,7 +73,6 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Load Plugins - Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew
   colored-man-pages
   command-not-found
   colorize
@@ -93,7 +82,6 @@ plugins=(
   composer
   dash
   docker
-  puddletown-arbitrary-brent-stuff
   puddletown-brew
   puddletown-docker-compose
   puddletown-zsh
@@ -104,7 +92,6 @@ plugins=(
   puddletown-git
   puddletown-jekyll
   puddletown-linters
-  puddletown-mac
   puddletown-network
   puddletown-php
   puddletown-postgres
@@ -127,7 +114,7 @@ plugins=(
 ZSH_CUSTOM="$ZSH_CONFIG/oh-my-zsh"
 
 # User configuration
-export MANPATH="/usr/local/share/man:/usr/share/man"
+# export MANPATH="/usr/local/share/man:/usr/share/man"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -145,10 +132,10 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -Uz compinit && compinit
 
 # Load shell integrations
-source /usr/local/share/zsh/site-functions
+# source /usr/local/share/zsh/site-functions
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $ZSH_CONFIG/iterm2_shell_integration.zsh
 source $ZSH/oh-my-zsh.sh
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
