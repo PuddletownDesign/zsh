@@ -1,8 +1,6 @@
 # Update all binaries and apps installed through brew
 #
-# Platform Specific plugins
-if [[ $OSTYPE==darwin* ]]; then
-  alias update='brew update && brew upgrade && brew cu -ay && brew missing && apm update --no-confirm && omz update && brew cleanup && brew doctor'
+  alias update='sudo apt update && sudo apt list --upgradeable && sudo apt full-upgrade -y'
 
   # Back up all configs and preferences
   alias backupconfig="cd ~/Files/Config/bin/ && ./backup-configs.sh"
@@ -25,8 +23,3 @@ if [[ $OSTYPE==darwin* ]]; then
   alias backupinstaller="cd ~/Files/Config/Installer && ./backup.sh"
 
   alias backupbin="cd ~/Files/Config/bin && ./backup.sh"
-
-
-elif [[ $OSTYPE==*linux* ]]; then
-  sudo apt update && sudo apt full-upgrade -y
-fi

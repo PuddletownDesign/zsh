@@ -22,7 +22,7 @@ export ZSH="$HOME/.oh-my-zsh"
 if [[ -n $SSH_CONNECTION ]]; then
   ZSH_THEME="puddletown-ssh"
 else
-  ZSH_THEME="puddletown"
+  ZSH_THEME="random"
 fi
 
 # Set list of themes to pick from when loading at random
@@ -82,7 +82,7 @@ plugins=(
   composer
   dash
   docker
-  puddletown-brew
+  puddletown-apt
   puddletown-docker-compose
   puddletown-zsh
   puddletown-docker
