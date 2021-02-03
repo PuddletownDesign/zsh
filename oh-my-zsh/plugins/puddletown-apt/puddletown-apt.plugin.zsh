@@ -11,5 +11,4 @@ alias ain='apt show'
 
 alias a='sudo apt'
 alias ai='sudo apt update && sudo apt install -y'
-alias au='sudo apt update && sudo apt-purge'
-
+alias au='sudo apt update && sudo apt purge -y'
